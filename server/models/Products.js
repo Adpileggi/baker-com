@@ -21,11 +21,11 @@ const productShcema = new Schema(
             type: String,
         },
         // make category schema
-        // category: {
-        //     type: Schema.Types.ObjectId,
-        //     ref: 'Category',
-        //     required: true,
-        // },
+        category: {
+            type: Schema.Types.ObjectId,
+            ref: 'Category',
+            required: true,
+        },
     },
     {
         toJSON: {
