@@ -8,7 +8,7 @@ productList: [Product]
 type Product {
 _id: ID
 name: String
-price: float
+price: Float
 quantity: Int
 description: String
 image: String
@@ -41,18 +41,18 @@ type Query {
  order(_id: ID!): Order
  }
 
- type Mutation{
+ type Mutation {
  addUser(
  email: String!
  password: String!
  ): Auth
  addOrder(prodcuts: [ID]!): Order
  updateUser(
- email: String!
- password: String
- role: String
+   email: String!
+   password: String
+   role: String
  ): User
- update:Product(_id: ID!, quantity: Int!): Product
+ updateProduct(_id: ID!, quantity: Int!): Product
  login(email: String!, password: String!): Auth
  }
 `;
