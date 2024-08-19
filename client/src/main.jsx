@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import App from './App.jsx'
 import './index.css'
-import ErrorPage from '../public/pages/ErrorPage.jsx';
-import Home from '../public/pages/Home.jsx';
+import ErrorPage from './pages/ErrorPage.jsx';
+import Home from './pages/Home.jsx';
 
 const router = createBrowserRouter([
   {
