@@ -7,14 +7,14 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import { Outlet } from 'react-router-dom';
-import Nav from './componets/NavBar'
+import Nav from './components/NavBar'
 
 
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
 
-// Construct request middleware tat will attach the JWT
+// Construct request middleware that will attach the JWT
 const authLink = setContext((_, { headers }) => {
   const token = localStorage.getItem('id_token');
   return {
