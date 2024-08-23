@@ -17,7 +17,7 @@ function NavBar() {
           <li className={`nav nav-item`}>
           <Link
             to="/Login"
-            className={currentPage === '/Login' ? `nav-link` : `nav-link`}
+            className={currentPage === '/login' ? `nav-link` : `nav-link`}
           >
             Login
           </Link>
@@ -26,7 +26,7 @@ function NavBar() {
         <li className={`nav nav-item`}>
           <Link
             to="/Products"
-            className={currentPage === '/Products' ? `nav-link` : `nav-link`}
+            className={currentPage === '/products' ? `nav-link` : `nav-link`}
           >
             Products
           </Link>
@@ -35,7 +35,7 @@ function NavBar() {
         <li className={`nav nav-item`}>
           <Link
             to="/Cart"
-            className={currentPage === '/Cart' ? `nav-link` : `nav-link`}
+            className={currentPage === '/cart' ? `nav-link` : `nav-link`}
           >
             Shopping Cart
           </Link>
